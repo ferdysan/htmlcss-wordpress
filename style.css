@@ -3,3 +3,171 @@
   margin: 0 auto;
   padding: 0;
 }
+
+body{
+  background-image: url('img/natural-default-pattern.png');
+  width: 1200px;
+  color: #666;
+  font-family: 'Roboto',Arial,Helvetica,sans-serif;
+  line-height: 1.8;
+  font-weight: 300;
+}
+
+.header{
+  width: 100%;
+  background-image: url('img/natural-default-header.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-top: 25px;
+  height: 300px;
+  border: 15px solid white;
+  position: relative;
+}
+
+#navigazione{
+  width: 100%;
+  background-color: #4e4741;
+  margin-bottom: 25px;
+}
+
+h1,h2,h3,h4,h5,h6{
+  color: #504741;
+font-family: 'Montserrat','Helvetica Neue',Arial,sans-serif;
+font-weight: 300;
+line-height: 1.4;
+margin: 4px 0;
+padding: 4px 0;
+}
+
+a{
+  color:#9c3;
+  text-decoration: none;
+  font-weight: 400;
+}
+
+a:hover{
+  text-decoration: underline;
+  color: #690;
+}
+
+#logo{
+  color: white;
+  text-transform: uppercase;
+  position: absolute;
+  bottom:50%;
+  left: 50%;
+  transform: translate(-50%, 50%);
+  padding: 10px;
+  border: 5px solid white;
+  letter-spacing: 5px;
+  font-size: 50px;
+  font-weight: lighter;
+}
+
+
+
+.sidebar_link{
+  text-decoration: none;
+  display: block;
+  margin-top: 20px;
+  color:#9c3;
+}
+
+.sidebar_link:hover{
+  padding: 10px;
+  background-color: #0000000d;
+  border-top: 1px solid #ddd;
+}
+
+#navigazione nav ul li{
+  display: inline-block;
+  text-decoration: none;
+  color:white;
+  text-transform: uppercase;
+  font-size: 12px;
+  line-height: 40px;
+  border-left: 1px solid green;
+  padding: 0px 10px 0 10px;
+}
+
+#navigazione nav ul{
+  text-align: center;
+}
+
+.centrale .paragrafi{
+  display: block;
+  margin-top: 30px;
+}
+
+nav ul li:first-of-type{
+  border-left: 0px;
+}
+
+.widget{
+  width: 20%;
+  float: left;
+}
+
+.sidebar_1{
+  padding: 20px 30px 20px 20px;
+  margin-right: 20px;
+}
+
+.sidebar_2{
+  float: left;
+  width: 30%;
+}
+
+.widget_2, .widget_3{
+  padding: 20px 30px 20px 20px;
+  margin-bottom: 20px;
+}
+
+.sidebar_2 h3{
+  margin-bottom: 20px;
+}
+
+
+.blog{
+  float: left;
+  width: 50%;
+}
+
+.centrale, .sidebar_1, .widget_2, .widget_3, .bottom_footer{
+  background-color: #FFFFFF;
+}
+
+.centrale{
+  margin-right: 20px;
+  padding:20px 15px 20px 15px;
+}
+
+.bottom_footer{
+  margin-top: 20px;
+  padding: 20px 30px 20px 20px;
+  position: relative;
+}
+
+.link_autore{
+  position: absolute;
+  bottom:0;
+  left:0;
+}
+
+.social_icon{
+  position: absolute;
+  bottom:0;
+  right: 0;
+}
+
+.social_icon ul li{
+  display: inline-block;
+
+}
+
+
+main::after{
+  clear:left;
+  display: table;
+  content:'';
+}
