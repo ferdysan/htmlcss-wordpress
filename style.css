@@ -13,6 +13,17 @@ body{
   font-weight: 300;
 }
 
+h1,h2,h3,h4,h5,h6{
+color: #504741;
+font-family: 'Montserrat','Helvetica Neue',Arial,sans-serif;
+font-weight: 300;
+line-height: 1.0;
+margin: 4px 0;
+padding: 4px 0;
+}
+
+/*CODICE HEADER*/
+
 .header{
   width: 100%;
   background-image: url('img/natural-default-header.jpg');
@@ -62,14 +73,6 @@ body{
   background-color: #4e4741;
 }
 
-h1,h2,h3,h4,h5,h6{
-color: #504741;
-font-family: 'Montserrat','Helvetica Neue',Arial,sans-serif;
-font-weight: 300;
-line-height: 1.0;
-margin: 4px 0;
-padding: 4px 0;
-}
 
 .rss_title a h3{
    display: inline;
@@ -215,10 +218,29 @@ blockquote{
   color:black;
 }
 
-.widget_footer , .widget_footer_2 {
+.widget_footer{
   float: left;
   width: 25%;;
   padding: 20px;
+}
+
+.widget_footer_2{
+  float: left;
+  width: 50%;
+  padding: 20px;
+  position: relative;
+}
+
+.social_icon{
+ width: 100%;
+ margin-right: 20px;
+ position: absolute;
+ display: inline-block;
+}
+
+#link_autor a{
+  text-decoration: none;
+  color: #00000059;
 }
 
 footer{
