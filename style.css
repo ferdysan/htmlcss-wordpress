@@ -35,42 +35,51 @@ padding: 4px 0;
   position: relative;
 }
 
-.menu_item a{
-  color:white;
-  text-decoration: none;
-}
-
-.menu_item a:hover{
+#navigazione ul li:hover{
   background-color: #262320;
 }
-
 
 #navigazione{
   width: 100%;
   margin-bottom: 25px;
+  background-color: #4F4741;
+    text-align: center;
 }
 
-#navigazione nav ul li{
+#navigazione ul li a{
+  color: white;
+}
+
+#navigazione ul li{
   display: inline-block;
   text-decoration: none;
   color:white;
   text-transform: uppercase;
   font-size: 12px;
   line-height: 40px;
-  border-left: 1px solid #262320;
+  border-left: 1px solid rgba(255,255,255,.1);
   padding: 0px 10px 0 10px;
+  text-align: center;
+}
+
+#headline{
+  font-size: 2.7em;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-shadow: 3px 3px 0px rgba(0,0,0,.1);
+    line-height: 1.1;
+    letter-spacing: -1.4px;
+    margin: 0 0 12px;
+    padding: 0;
 }
 
 /*nascondo bordo menu*/
-#navigazione ul li:first-child{
+#navigazione a:first-child{
   border-left: 0px;
 }
 
-
-
-#navigazione nav ul{
-  text-align: center;
-  background-color: #4e4741;
+#navigazione a:last-child{
+  border-right: 0px;
 }
 
 
@@ -87,21 +96,21 @@ a{
   text-decoration: none;
 }
 
+/*sostituita scritta con immagine in quanto non riuscito a posizionare l'icona della montagna
+al di sopra della scritta*/
 #logo{
-  color: white;
-  text-transform: uppercase;
+  /* color: white;
+  text-transform: uppercase; */
   position: absolute;
   bottom:50%;
   left: 50%;
   transform: translate(-50%, 50%);
-  padding: 10px;
+  /* padding: 10px;
   border: 5px solid white;
   letter-spacing: 5px;
   font-size: 50px;
-  font-weight: lighter;
+  font-weight: lighter; */
 }
-
-
 
 .sidebar_link{
   text-decoration: none;
@@ -120,10 +129,6 @@ a{
 .centrale .paragrafi{
   display: block;
   margin-top: 30px;
-}
-
-nav ul li:first-of-type{
-  border-left: 0px;
 }
 
 .widget{
@@ -150,7 +155,6 @@ nav ul li:first-of-type{
   margin-bottom: 20px;
 }
 
-
 .blog{
   float: left;
   width: 45%;
@@ -169,13 +173,6 @@ nav ul li:first-of-type{
   color:#9c3;
   font-weight: 400;
 }
-
-.bottom_footer{
-  margin-top: 20px;
-  padding: 20px 30px 20px 20px;
-  position: relative;
-}
-
 
 .social_icon{
   position: absolute;
@@ -206,16 +203,13 @@ blockquote{
 }
 
 .social_icon ul li a{
-  color: #4e4741;
+  color: #666666;
   margin-left: 10px;
 }
 
-.bottom_footer a{
-  color: #00000059;
-}
+.social_icon ul li a:hover{
+  color: #ddd;
 
-.widget_footer_2 ul li a{
-  color:black;
 }
 
 .widget_footer{
@@ -224,11 +218,31 @@ blockquote{
   padding: 20px;
 }
 
-.widget_footer_2{
+.bottom_footer{
   float: left;
-  width: 50%;
+  width: 100%;
   padding: 20px;
   position: relative;
+}
+
+input[type="search"]{
+  background-color: #ddd;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+button{
+  background-color: #706760;
+  width: 42px;
+  height: 42px;
+}
+
+button:hover{
+  background-color: #504741;
+}
+
+.search{
+  display: block;
 }
 
 .social_icon{
@@ -243,12 +257,16 @@ blockquote{
   color: #00000059;
 }
 
+.bottom_footer{
+  border-top: 1px solid #00000059;
+}
+
 footer{
   background-color: white;
   margin-top: 30px;
 }
 
-main:after{
+header:after, main:after{
   clear:left;
   display: table;
   content:'';
